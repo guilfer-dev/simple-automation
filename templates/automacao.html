@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+  <head> 
+     <title>GPIO Control</title> 
+     <link rel="stylesheet" href='../static/automacao.css'/> 
+  </head> 
+  <body> 
+		<h1>Controle de lampadas</h1> 
+
+		<h2> Interruptores </h2> 
+		
+		<h3> Quarto
+			{% if  quarto   == 1 %} 
+				<a href="/quarto/desligado"class="button">Ligar/Desligar</a> 
+			{% else %} 
+				<a href="/quarto/ligado" class="button">Ligar/Desligar</a>  
+			{% endif %}	 
+		</h3> 
+		<h3> Garagem 
+			{% if  garagem   == 1 %} 
+				<a href="/garagem/desligado"class="button">Ligar/Desligar</a> 
+			{% else %} 
+				<a href="/garagem/ligado" class="button">Ligar/Desligar</a>  
+			{% endif %}	 
+		</h3> 
+  </body> 
+</html>
