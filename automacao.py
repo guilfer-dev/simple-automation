@@ -7,11 +7,6 @@ automacao = Flask(__name__)
 quarto = 23
 garagem = 24
 
-#inicializar status dos comodos
-
-statusquarto = 0
-statusgaragem = 0
-
 #configuracoes dos pinos
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
