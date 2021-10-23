@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Raspberry Pi - Multi-relay control</title>
+    <link rel="stylesheet" href='../static/style.css'/>
+</head>
+<body>
+<h1>Multi-relay control</h1>
+
+<form action="/relay_one/{% if relay_one == True %}True{% else %}False{% endif %}" method="get">
+    <button type='submit'
+            style="background-color:{% if relay_one == True %}#DC3545{% else %}#28A745{% endif %}"> Relay 1
+    </button>
+</form>
+<form action="/relay_two/{% if relay_two == True %}True{% else %}False{% endif %}" method="get">
+    <button type='submit'
+            style="background-color:{% if relay_two == True %}#DC3545{% else %}#28A745{% endif %}">Relay 2
+    </button>
+</form>
+<div class="label">
+    <div class="on"></div>
+    <p> On </p>
+</div>
+<div class="label">
+    <div class="off"></div>
+    <p> Off </p>
+</div>
+
+</body>
+</html>
